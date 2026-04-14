@@ -148,8 +148,7 @@ KGN Enterprises
 ## 📬 Contact
 
 * Email: [kgnenterprises9670@gmail.com](mailto:kgnenterprises9670@gmail.com)
-* Phone: +91 9881901568
-
+* Visit: [https://kgnenterprises.liveblog365.com/]
 ---
 
 ## ⭐ Future Enhancements
