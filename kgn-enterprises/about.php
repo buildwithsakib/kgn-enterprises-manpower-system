@@ -471,24 +471,6 @@ $db = $database->getConnection();
                         </a>
                     </div>
                 </div>
-
-                <!-- Team Member 3 - Swapnil Salunke -->
-                <div class="team-card bg-white rounded-2xl shadow-lg p-6 text-center border border-gray-200">
-                    <div class="w-40 h-40 bg-gradient-to-br from-gray-900 to-black rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-                        <img src="uploads/settings/swapnil.png" alt="Mr. Swapnil Salunke" class="w-full h-full object-cover"
-                             onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop'">
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Mr. Swapnil Salunke</h3>
-                    <p class="text-orange-500 font-bold mb-4">Operations Manager</p>
-                    <p class="text-gray-600 text-sm leading-relaxed font-medium mb-4">
-                        Specialized in talent acquisition and workforce management with expertise in screening and deploying quality manpower.
-                    </p>
-                    <div class="flex justify-center space-x-4">
-                        <a href="https://www.instagram.com/swapnil__9004" class="text-gray-400 hover:text-orange-500 transition duration-300" target="_blank">
-                            <i class="fab fa-instagram text-lg"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
