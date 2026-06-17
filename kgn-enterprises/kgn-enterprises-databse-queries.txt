@@ -97,13 +97,104 @@ CREATE TABLE IF NOT EXISTS testimonials (
     INDEX idx_approved_featured (is_approved, featured, display_order)
 );
 -- Insert sample testimonials
-INSERT INTO testimonials (client_name, client_designation, company, testimonial, rating, service_type,client_image,email,phone, is_approved, featured) VALUES
-('OMKAR UGLE', 'Manager', 'NIYATI PVT. LTD', 'Provided excellent manpower support for our project. Professional and reliable service.', 5, 'Skilled Manpower', TRUE, TRUE),
-('TEJAS PAWALE', 'HR Manager', 'Manufacturing Unit', 'Quick deployment of skilled workers. Great replacement policy and professional team.', 5, 'Industrial Workers', TRUE, TRUE),
-('ROHIT KINKER', 'Operations Head', 'IT Company', 'Best manpower service in Pune. They understand client requirements perfectly.', 5, 'IT Professionals', TRUE, TRUE),
-('VIVEK KUTE', 'HR Manager', 'IT Services Pune', 'The IT professionals provided by KGN ENTERPRISES are well-qualified and skilled.', 5, 'IT Staffing', TRUE, TRUE),
-('SARTHAK ARUDE', 'Production Head', 'Pune Manufacturing Unit', 'KGN ENTERPRISES has been our reliable manpower partner for 3 years. Their skilled workforce helped us increase production efficiency by 40%.', 5, 'Industrial Manpower', TRUE, TRUE),
-('MANISH', 'Facility Manager', 'Hospital Chain', 'The housekeeping and facility management staff provided by KGN are well-trained and professional. They maintain high hygiene standards.', 5, 'Facility Management', TRUE, TRUE);
+INSERT INTO testimonials (
+    client_name,
+    client_designation,
+    company,
+    testimonial,
+    rating,
+    service_type,
+    client_image,
+    email,
+    phone,
+    is_approved,
+    featured,
+    display_order
+) VALUES
+(
+    'OMKAR UGLE',
+    'Manager',
+    'NIYATI PVT. LTD',
+    'Provided excellent manpower support for our project. Professional and reliable service.',
+    5,
+    'Skilled Manpower',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    1
+),
+(
+    'TEJAS PAWALE',
+    'HR Manager',
+    'Manufacturing Unit',
+    'Quick deployment of skilled workers. Great replacement policy and professional team.',
+    5,
+    'Industrial Workers',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    2
+),
+(
+    'ROHIT KINKER',
+    'Operations Head',
+    'IT Company',
+    'Best manpower service in Pune. They understand client requirements perfectly.',
+    5,
+    'IT Professionals',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    3
+),
+(
+    'VIVEK KUTE',
+    'HR Manager',
+    'IT Services Pune',
+    'The IT professionals provided by KGN ENTERPRISES are well-qualified and skilled.',
+    5,
+    'IT Staffing',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    4
+),
+(
+    'SARTHAK ARUDE',
+    'Production Head',
+    'Pune Manufacturing Unit',
+    'KGN ENTERPRISES has been our reliable manpower partner for 3 years. Their skilled workforce helped us increase production efficiency by 40%.',
+    5,
+    'Industrial Manpower',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    5
+),
+(
+    'MANISH',
+    'Facility Manager',
+    'Hospital Chain',
+    'The housekeeping and facility management staff provided by KGN are well-trained and professional. They maintain high hygiene standards.',
+    5,
+    'Facility Management',
+    NULL,
+    NULL,
+    NULL,
+    TRUE,
+    TRUE,
+    6
+);
 
 -- Table: team_members
 CREATE TABLE IF NOT EXISTS team_members (
@@ -123,9 +214,27 @@ CREATE TABLE IF NOT EXISTS team_members (
 );
 
 -- Insert team members
-INSERT INTO team_members (name, designation, description, display_order, is_active) VALUES
-('Mr. Javed Turuk', 'Founder & Director', 'With over 5 years of experience in the manpower industry, Mr. Javed leads KGN ENTERPRISES with vision and expertise in staffing solutions.', 1, TRUE),
-('Mr. Sakib Shaikh', 'Business Development Manager', 'Expertise in operations management and client relations with 8+ years of experience in manpower deployment and facility management.', 2, TRUE),
+INSERT INTO team_members (
+    name,
+    designation,
+    description,
+    display_order,
+    is_active
+) VALUES
+(
+    'Mr. Javed Turuk',
+    'Founder & Director',
+    'With over 5 years of experience in the manpower industry, Mr. Javed leads KGN ENTERPRISES with vision and expertise in staffing solutions.',
+    1,
+    TRUE
+),
+(
+    'Mr. Sakib Shaikh',
+    'Business Development Manager',
+    'Expertise in business development, operations management, client relations, tender management, digital transformation, and manpower deployment for industrial and government projects.',
+    2,
+    TRUE
+);
 
 
 -- Table: jobs
@@ -147,11 +256,66 @@ CREATE TABLE IF NOT EXISTS jobs (
 );
 
 -- Insert sample jobs
-INSERT INTO jobs (title, slug, location, salary_range, description) VALUES
-('Cook- Semiskilled', 'cook-semiskilled', 'Pune', '18000-20000', 'Cook for reputed company\'s Guest house in Pune...'),
-('Data Entry Operator', 'data-entry-operator', 'Pune', '12,000 - 18,000', 'Immediate openings for Data Entry Operators with good typing speed....'),
-('HR Executive', 'hr-executive', 'Pune', '20000', 'We are looking for an experienced HR Executive to manage payroll of employees....'),
-('Programmer', 'programmer', 'Pune', '25000', 'Programmer position available with required skills for development tasks...');
+INSERT INTO jobs (
+    title,
+    slug,
+    description,
+    job_type,
+    location,
+    experience,
+    qualification,
+    salary_range,
+    deadline,
+    is_active
+) VALUES
+(
+    'Cook - Semiskilled',
+    'cook-semiskilled',
+    'Cook required for a reputed company guest house in Pune. Candidate should have experience in preparing Indian meals and maintaining kitchen hygiene.',
+    'full_time',
+    'Pune',
+    '1-2 Years',
+    '10th Pass',
+    '₹18,000 - ₹20,000',
+    '2026-12-31',
+    TRUE
+),
+(
+    'Data Entry Operator',
+    'data-entry-operator',
+    'Immediate openings for Data Entry Operators with good typing speed and basic computer knowledge.',
+    'full_time',
+    'Pune',
+    'Fresher',
+    '12th Pass',
+    '₹12,000 - ₹18,000',
+    '2026-12-31',
+    TRUE
+),
+(
+    'HR Executive',
+    'hr-executive',
+    'Looking for an experienced HR Executive to manage recruitment, payroll, attendance, and employee records.',
+    'full_time',
+    'Pune',
+    '2+ Years',
+    'Graduate / MBA HR',
+    '₹20,000 - ₹30,000',
+    '2026-12-31',
+    TRUE
+),
+(
+    'Programmer',
+    'programmer',
+    'Programmer required with knowledge of PHP, MySQL, JavaScript, HTML, CSS, and API integration.',
+    'full_time',
+    'Pune',
+    '1-3 Years',
+    'BCA / B.Sc. / MCA / B.Tech',
+    '₹25,000 - ₹40,000',
+    '2026-12-31',
+    TRUE
+);
 
 -- Table: job_applications
 CREATE TABLE IF NOT EXISTS job_applications (
