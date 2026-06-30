@@ -36,7 +36,7 @@ This system helps KGN Enterprises provide skilled and unskilled workforce to var
 * Featured client showcase
 
 ### 📩 Contact & Applications
-
+ 
 * Contact form submissions tracking
 * Job applications with status tracking
 
@@ -59,7 +59,6 @@ This system helps KGN Enterprises provide skilled and unskilled workforce to var
 
 ## 📂 Project Structure
 
-```
 kgn-enterprises/
 ├── admin/                      # Admin Panel
 │   ├── index.php              # Login Page
