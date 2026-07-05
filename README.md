@@ -54,45 +54,6 @@ This system helps KGN Enterprises provide skilled and unskilled workforce to var
 * **Backend:** PHP
 * **Database:** MySQL
 * **Server:** Apache (XAMPP/WAMP)
-
----
-
-## 📂 Project Structure
-
-kgn-enterprises/
-├── admin/                      # Admin Panel
-│   ├── index.php              # Login Page
-│   ├── dashboard.php          # Admin Dashboard
-│   ├── logout.php             # Logout
-│   └── modules/
-│       ├── services.php       # Manage Services
-│       ├── jobs.php           # Manage Jobs
-│       ├── testimonials.php   # Manage Testimonials
-│       ├── clients.php        # Manage Clients
-│       ├── gallery.php        # Manage Gallery
-│       ├── contacts.php       # View Contacts
-│       └── settings.php       # Website Settings
-├── config/
-│   └── database.php
-├── uploads/
-│   ├── admin/                 # Admin uploads
-│   ├── services/
-│   ├── clients/
-│   ├── resumes/
-│   ├── team/
-│   ├── testimonials/
-│   └── gallery/
-├── index.php
-├── about.php
-├── services.php
-├── careers.php
-├── clients.php
-├── gallery.php
-├── testimonials.php
-├── contact.php
-└── .htaccess
-```
-
 ---
 
 ## ⚙️ Installation & Setup
@@ -157,3 +118,4 @@ KGN Enterprises
 * AI-based candidate filtering
 * Email/SMS notifications
 
+---
