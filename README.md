@@ -6,9 +6,9 @@ KGN Enterprises Manpower Management System is a full-stack web application desig
 
 This system helps KGN Enterprises provide skilled and unskilled workforce to various industries across Maharashtra.
 
-![K G N ENTERPRISES Home Page](kgn-enterprises-manpower-system/screenshots/index.png)
+![K G N ENTERPRISES Home Page](kgn-enterprises/screenshots/index.png)
 
-For the complete user interface and all application modules, visit the **[screenshots](kgn-enterprises-manpower-system/screenshots/)** directory.
+For the complete user interface and all application modules, visit the **[screenshots](kgn-enterprises/screenshots/)** directory.
 ---
 
 ## 🚀 Key Features
